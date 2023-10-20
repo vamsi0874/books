@@ -36,34 +36,34 @@
   padding: 20px;
 }
 
-/* blog previews / list */
-.blog-preview {
+/* book previews / list */
+.book-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #1d6c8b;
 }
-.blog-preview:hover {
+.book-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
-.blog-preview h2 {
+.book-preview h2 {
   font-size: 20px;
   color: #1d6c8b;
   margin-bottom: 8px;
 }
-.blog-preview a{
+.book-preview a{
   text-decoration: none;
 }
 
-/* blog details page */
-.blog-details h2 {
+/* book details page */
+.book-details h2 {
   font-size: 20px;
   color: #1d6c8b;
   margin-bottom: 10px;
 }
-.blog-details div {
+.book-details div {
   margin: 20px 0;
 }
-.blog-details button {
+.book-details button {
   background: #1d6c8b;
   color: #fff;
   border: 0;
@@ -72,7 +72,7 @@
   cursor: pointer;
 }
 
-/* create new blog form */
+/* create new book form */
 .create {
   max-width: 400px;
   margin: 0 auto;
@@ -103,6 +103,6 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.blog {
+.book {
   color: rgb(0, 0, 0);
 }

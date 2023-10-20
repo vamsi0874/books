@@ -9,12 +9,12 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = { title, body, author };
+    const book = { title, body, author };
 
-    fetch('http://localhost:8000/blogs/', {
+    fetch('http://localhost:8000/books/', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog)
+      body: JSON.stringify(book)
     }).then(() => {
       // history.go(-1);
       history('/');
@@ -23,22 +23,22 @@ const Create = () => {
 
   return (
     <div className="create">
-      <h2>Add a New Blog</h2>
+      <h2>Add a New Book</h2>
       <form onSubmit={handleSubmit}>
-        <label>Blog title:</label>
+        <label>Book title:</label>
         <input 
           type="text" 
           required 
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <label>Blog body:</label>
+        <label>Book body:</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <label>Blog author:</label>
+        <label>Book author:</label>
         <select
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
@@ -48,7 +48,7 @@ const Create = () => {
           <option value="brock">brock</option>
           <option value="smith">smith</option>
         </select>
-        <button>Add Blog</button>
+        <button>Add Book</button>
       </form>
     </div>
   );

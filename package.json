@@ -1,6 +1,6 @@
 {
-  "homepage": "https://vamsi0874.github.io/blogs",
-  "name": "blogs",
+  "homepage": "https://vamsi0874.github.io/books",
+  "name": "books",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
